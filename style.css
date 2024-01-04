@@ -1,0 +1,184 @@
+/* =======GOOGLE FONT IMPORT ==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ==== GLOBAL STYLE ====*/
+*{
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+h2,h3,h4,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.bg-style-light, .content-item, .acc-item{
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.acc-item, .content-item{
+    background:#fff;
+}
+form input ,form button, form textarea{
+    padding: 10px;
+    background:#fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+form input, form textarea{
+    width: -webkit-fill-available;
+}
+#support-home .home-content, 
+#support-faq .faq-content, 
+#support-contact .contact-form{
+    height: 330px;
+    box-shadow: 0 0 1px #464646;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+/*===== REUSABLE CLASSES=====*/
+.page-header{
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.tabContent{
+    display: none;
+}
+.active{
+    display: block;
+}
+/* ==== FONT SIZE====*/ 
+h2{
+    font-size: 23px;
+}
+h4{
+    font-size: 14px;
+}
+/* ======= POPUP POSITION AND DESING =====*/
+#support-popup{
+    display: none;
+    max-width: 380px;
+    width: 100%;
+    position: fixed;
+    bottom: 15px;
+    right: 100px;
+}
+/* ==== SUPPORT FLOATING BUTTON DESING*/
+#support-popup{
+    box-shadow: 0px 0px 5px rgb(150, 150, 150);
+    border-radius: 5px;
+    overflow: hidden;
+}
+#support-btn button{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+#support-btn button{
+    height: 70px;
+    width: 70px;
+    background-color: #167FA0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#support-btn button i{
+    font-size: 30px;
+    color: #fff;
+}
+#close-popup{
+    display: none;
+}
+/* ==== POPUP HEADER ====*/
+#support-popup .support-heading {
+    background:#167FA0;
+    padding: 10px;
+    text-align: center;
+}
+#support-popup .support-heading h2 {
+    color: #fff;
+}
+/* ===== POPUP BODY DESING ====*/ 
+#support-body{
+    padding: 10px;
+}
+/*==== SUPPORT HOME PAGE DESIGN ====*/
+#support-home form{
+    position: relative;
+    margin-top: 5px;
+}
+#support-home form button{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+#support-home .home-filter{
+    height: 70px;
+}
+/* ==== FAQ PAGE DESIGN ====*/
+#support-faq .acc-title{
+    position:relative;
+}
+#support-faq .acc-item i{
+    font-size: 16px;
+    padding: 0 10px;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+#support-faq .acc-content{
+    margin-top: 15px;
+    display: none;
+}
+#support-faq .acc-title{
+    cursor: pointer;
+}
+/* ==== CONTACT FORM DESING ====*/
+#support-contact form button{
+    background:#0B3D4C;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+#support-contact form button:hover{
+    background:#092D38;
+}
+/*=====SUPPORT FOOTER DESIGN====*/
+#support-footer .footer-tabs{
+    display: flex;
+    justify-content: space-around;
+}
+#support-footer .footer-tabs .tab-item{
+    display: flex;
+    justify-content: space-around;
+    background:#0B3D4C;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    transition: .5s;
+}
+#support-footer .tab-item h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+#support-footer .tab-item:hover{
+    background: #092D38;
+}
